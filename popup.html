@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+
+<body>
+  <div>
+    <fieldset>
+      <legend>5etop control panel:</legend>
+      Status:<br>
+      <label class="switch"><input type="checkbox" id="e_status_toggle">
+        <div class="slider round">
+          <!--ADDED HTML -->
+          <span class="on">On</span>
+          <span class="off">Off</span>
+          <!--END-->
+        </div>
+      </label><br>
+      Current wallet rate:<br>
+      <p id="e_message"></p>
+      <input type="text" name="rate" id="e_wallet_rate"><br><br>
+      <button type="button" id="e_change">Apply</button>
+    </fieldset>
+  </div>
+  <script src="background.js"></script>
+</body>
+
+</html>
